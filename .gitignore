@@ -14,7 +14,7 @@
 
 # production
 /build
-
+/public/*.pdf
 # misc
 .DS_Store
 
