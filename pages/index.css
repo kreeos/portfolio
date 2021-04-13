@@ -111,6 +111,14 @@ a {
 .description {
   line-height: 1.5;
   font-size: 1.5rem;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+.container_desc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 code {
@@ -133,6 +141,7 @@ code {
 }
 
 .card {
+  width: 85%;
   margin: 1rem;
   flex-basis: 100%;
   padding: 1.5rem;
@@ -163,6 +172,7 @@ code {
 }
 
 .exp-card {
+  width: 85%;
   margin: 1rem;
   flex-basis: 100%;
   padding: 1.5rem;

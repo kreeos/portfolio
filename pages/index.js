@@ -5,6 +5,7 @@ export default function Home() {
   return (
     <div className="container">
       <Head>
+      
         <title>Kris Lee</title>
         <link rel="icon" href="/icon-person.png" />
       </Head>
@@ -15,13 +16,14 @@ export default function Home() {
           </h1>
 
           <img className="image-portrait"/>
-
+	  <div clasName="container_desc">
           <p className="description">
             My name is KangHyun Lee, and you can call me by Kris!<br/>
             I just graduated from college, and just getting ready to spread my wings.
             <br/>
             Let me show you couple things about me.
           </p>
+	  </div>
 
           <div className="page">
             <div className="links">
