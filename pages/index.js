@@ -31,7 +31,7 @@ export default function Home() {
                 <img src="/email-logo.png" alt="Email Logo" className="logo-email"/>
                 {' '}E-mail 
               </a>
-              <a href="https://instrgram.com/kreeos47" target="blank" className="container-link">
+              <a href="https://www.instrgram.com/kreeos47" target="blank" className="container-link">
                 <img src="/insta-logo.png" alt="Insta Logo" className="logo-contact"/>
                 {' '}Instagram 
               </a>
@@ -58,7 +58,7 @@ export default function Home() {
             <a href="https://pioneers.kaist.ac.kr" className="card">
               <h3>PIONEERS 2071 &rarr;</h3>
               <p>
-                KAIST 50th year anniversary website. 
+                KAIST 50th year anniversary website 
                 <br/>I created this website using <code>React.js</code>,<code>MongoDB</code> and <code>Node.js</code>.
       	        <br/>
       	        <a className="link" href="https://github.com/kreeos/pioneers2071"> 
@@ -69,8 +69,8 @@ export default function Home() {
             <a href="https://rnl.kaist.ac.kr" className="card">
               <h3>RNL Website &rarr;</h3>
               <p>
-                Radiation Materials and Nanomechanics lab website. 
-                <br/>I created this website using <code>React.js</code>, <code>MongoDB</code> and <code>Node.js</code>
+                Radiation Materials and Nanomechanics lab website 
+                <br/>I created this website using <code>React.js</code>, <code>MongoDB</code> and <code>Node.js</code>.
         	  	  <br/> 
                 <a className="repo">
                   The project repository is <a className="private">private</a>
@@ -80,8 +80,8 @@ export default function Home() {
             <a href="https://horoscope.krislee.dev" className="card">
               <h3>Daily Horoscope &rarr;</h3>
               <p>
-                A website for your daily horoscope. 
-                <br/>I created this website using <code>HTML</code>, <code>CSS</code>, <code>MongoDB</code> and <code>Node.js</code>
+                A website for your daily horoscope 
+                <br/>I created this website using <code>HTML</code>, <code>CSS</code>, <code>MongoDB</code> and <code>Node.js</code>.
       	        <br/>
                 <a className="link" href="https://github.com/kreeos/newbie_project"> 
                   Link to Repo 
@@ -94,7 +94,7 @@ export default function Home() {
               <h3>KENS &rarr;</h3>
               <p>
                   KAIST Educational Network System <br/>
-      		        The system mainly consists of <code>C++</code>, and the main purpose is to build <code>TCP/IP</code>
+      		        The system mainly consists of <code>C++</code>, and the main purpose is to build <code>TCP/IP</code>.
       	  	      <br/> 
                   <a className="repo">
                     The project repository is <a className="private">private</a>
@@ -106,7 +106,7 @@ export default function Home() {
             >
               <h3>PintOS &rarr;</h3>
               <p>
-                Originally designed for Standford CS140, modified for KAIST CS330<br/>
+                Originally designed for Standford CS140, used for KAIST CS330<br/>
             		The system consists of 100% <code>C</code> Language. <br/>
             		Threading, scheduling, syscall, VM, and file system were implemented.
       	  	    <br/> 
@@ -135,12 +135,32 @@ export default function Home() {
       	      </p>
       	    </a>
             <a className="exp-card">
+              <h3>PM for SPARCS Biseo &rarr;</h3>
+              <p>
+      		<a className="date"> 2020.03 - 2020.12 </a><br/>
+                  The system was initially designed for SPARCS meetings.
+		  <br/> The service stack consists of <code>React.js</code>,<code>Typescript</code>,<code>MongoDB</code> and <code>Node.js</code>.
+		  <br/>For more information, please visit the project repo.&nbsp; 
+      	        <a className="link" href="https://github.com/sparcs-kaist/biseo-frontend"> 
+                  frontend
+                </a>
+		&nbsp;/&nbsp;
+      	        <a className="link" href="https://github.com/sparcs-kaist/biseo-backend"> 
+                  backend
+                </a>
+      	      </p>
+            </a>
+            <a className="exp-card">
               <h3>LG CNS - Intern</h3> 
               <p>
-      		      <a className="date"> 2020.01 - 2020.02 </a><br/>
+      		<a className="date"> 2020.01 - 2020.02 </a><br/>
       	        <p> 
-                  Internship as a Software Architect. 
-                </p>
+                  Internship as a Software Architect.
+                  <br/> The project was to create a full stack web application on a laptop.
+		  <br/> Used technologies were <code>VMWARE</code>, <code>Docker</code>, <code>Nginx</code>, <code>Nodejs</code>, 
+		<code>HTML/CSS</code>, <code>Jenkins</code>, and <code>Sonarqube</code>.
+
+		</p>
       	      </p>
       	    </a>
             <a className="exp-card">
@@ -148,7 +168,10 @@ export default function Home() {
               <p>
                 <a className="date"> 2019.06 - 2019.08 </a><br/>
                 <p>
-                  Developing an Android application for visually handicapped people. 
+                  Developing an Android application for visually handicapped people.
+		  <br/> I set up the development environment for the team using AWS
+	    	  <br/> The environment incldues EC2, ML training server, and CI/CD server.
+		  <br/> I also took parts in training an ML model, using <code>tensorflow</code>.
                 </p>
               </p>
             </a>
