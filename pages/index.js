@@ -31,7 +31,7 @@ export default function Home() {
                 <img src="/email-logo.png" alt="Email Logo" className="logo-email"/>
                 {' '}E-mail 
               </a>
-              <a href="https://www.instrgram.com/kreeos47" target="blank" className="container-link">
+              <a href="http://www.instrgram.com/kreeos47" target="blank" className="container-link">
                 <img src="/insta-logo.png" alt="Insta Logo" className="logo-contact"/>
                 {' '}Instagram 
               </a>
@@ -170,7 +170,7 @@ export default function Home() {
                 <p>
                   Developing an Android application for visually handicapped people.
 		  <br/> I set up the development environment for the team using AWS
-	    	  <br/> The environment incldues EC2, ML training server, and CI/CD server.
+	    	  <br/> The environment included EC2, ML training server, and CI/CD server.
 		  <br/> I also took parts in training an ML model, using <code>tensorflow</code>.
                 </p>
               </p>
