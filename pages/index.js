@@ -135,7 +135,7 @@ export default function Home() {
       	      </p>
       	    </a>
             <a className="exp-card">
-              <h3>PM for SPARCS Biseo &rarr;</h3>
+              <h3>PM for SPARCS Biseo </h3>
               <p>
       		<a className="date"> 2020.03 - 2020.12 </a><br/>
                   The system was initially designed for SPARCS meetings.
@@ -150,6 +150,15 @@ export default function Home() {
                 </a>
       	      </p>
             </a>
+	    <a className="exp-card">
+	        <h3>Server Manager</h3>
+		<p>
+		    <a className="date"> 2019.12 - 2020.12 </a><br/>
+		    Server Manager for ML enabled server.
+		    <br/> The server was <code>Dockerized</code>, and was managed with a GUI tool called <code>Portainer</code> for ease of use.
+		     
+		</p>
+	    </a>
             <a className="exp-card">
               <h3>LG CNS - Intern</h3> 
               <p>
