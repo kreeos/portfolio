@@ -3,7 +3,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Heebo sans-serif,
     sans-serif;
   /*background-color: #a1a1a1;*/
   /*max-width: ;*/
@@ -13,14 +13,68 @@ body {
   box-sizing: border-box;
 }
 
+.topbar {
+  min-width: 100vw;
+  height: 7vh;
+  background-color: #4880A0;
+  font-size: 48px;
+  font-weight: bold;
+  color: white;
+  /* text-align: center; */
+  padding-left: 20vw;
+  font-family: Heebo;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text {
+  /* position: relative; */
+  display: flex;
+}
+
+.text::after {
+  content: "";
+  margin-left: 15px;
+  margin-top: 7px;
+  /* Remove display: inline-block if not required to be on the same line as text etc */
+  display: flex;
+  background-color: white;
+  width: 10px;
+  /* Set height to the line height of .text */
+  height: 48px;
+  /*
+  Animation paramaters:
+  blink = animation-name,
+  1s = animation-duration,
+  step-end = animation-timing-function,
+  infinite = animation-iteration-count
+  */
+  -webkit-animation: blink 1s step-end infinite;
+  animation: blink 1s step-end infinite;
+}
+
+@-webkit-keyframes blink {
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+
+@keyframes blink {
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+
 .container {
   min-height: 100vh;
-  overflow-x: hidden; 
+  overflow-x: hidden;
   padding: 0 0.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /* font-family:  */
 }
 
 hr {
@@ -31,7 +85,7 @@ hr {
 }
 
 .section-title {
-  font-size: 2.5rem; 
+  font-size: 2.5rem;
   font-weight: bold;
 }
 
@@ -98,9 +152,11 @@ a {
 }
 
 .title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
+  margin: 5%;
+  font-family: Heebo;
+  line-height: 60px;
+  font-weight: 700;
+  font-size: 48px;
 }
 
 .title,
@@ -109,15 +165,27 @@ a {
 }
 
 .description {
+  text-align: left;
   line-height: 1.5;
-  font-size: 1.5rem;
+  font-size: 20px;
   margin-right: 5%;
   margin-left: 5%;
+  margin-bottom: 5%;
 }
 
-.container_desc {
+.desc-container {
   display: flex;
+  flex-direction: row;
   align-items: center;
+  justify-content: center;
+}
+
+
+.desc-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  text-align: left;
   justify-content: center;
 }
 
@@ -202,6 +270,24 @@ code {
   line-height: 1.5;
 }
 
+.btn-link {
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 40px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 7px;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  margin-right: 15px;
+}
+
+.btn-link:hover {
+  color: white;
+  background: #4880A0;
+}
+
 .link {
   color: #87CEEB;
   text-decoration: underline;
@@ -221,14 +307,14 @@ code {
 }
 
 .logo-contact {
-  width: 1.5em;
-  height: 1.5em;
+  width: 25px;
+  height: 25px;
   padding: 3px;
 }
 
 .logo-email {
-  width: 1.5em;
-  height: 1.3em;
+  width: 27px;
+  height: 23px;
   padding: 3px;
 }
 
@@ -240,10 +326,11 @@ code {
 }
 
 .links {
+  margin-left: 5%;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 .container-link {
