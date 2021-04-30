@@ -104,14 +104,16 @@ export default function Home() {
   		        <br/> The service stack consists of <b>React.js</b>, <b>Typescript</b>, <b>MongoDB</b> and <b>Node.js</b>.
   		        <br/>For more information, please visit the project repo.&nbsp;
               <br/>
-              <a href="https://github.com/sparcs-kaist/biseo-frontend" target="blank" className="btn-link">
-                <img src="/svg-github.svg" alt="Biseo Frontend" className="logo-contact"/>
-                {' '}Frontend
-              </a>
-              <a href="https://github.com/sparcs-kaist/biseo-backend" target="blank" className="btn-link">
-                <img src="/svg-github.svg" alt="Biseo Frontend" className="logo-contact"/>
-                {' '}Backend
-              </a>
+              <div className="btn-container">
+                <a href="https://github.com/sparcs-kaist/biseo-frontend" target="blank" className="btn-link">
+                  <img src="/svg-github.svg" alt="Biseo Frontend" className="logo-contact"/>
+                  {' '}Github(Frontend)
+                </a>
+                <a href="https://github.com/sparcs-kaist/biseo-backend" target="blank" className="btn-link">
+                  <img src="/svg-github.svg" alt="Biseo Frontend" className="logo-contact"/>
+                  {' '}Gtihub(Backend)
+                </a>
+              </div>
             </p>
           </div>
           <div className="card-content">
@@ -119,21 +121,35 @@ export default function Home() {
               <h1>Server Manager</h1>
               <a> 2019.12 - 2021.02 </a>
             </div>
-            <p> Lorem Ipsum. </p>
+            <p>
+              Server Manager for ML enabled server.
+              <br/> The server was <b>Dockerized</b>, and was managed with a GUI tool called <b>Portainer</b> for ease of use.
+            </p>
           </div>
           <div className="card-content">
             <div className="card-title">
               <h1>LG CNS - Intern</h1>
               <a> 2020.01 - 2020.02 </a>
             </div>
-            <p> Lorem Ipsum. </p>
+            <p>
+              Internship as a Software Architect.
+              <br/> The project was to create a full stack web application on a laptop.
+              <br/> The environment was set up with <b>VMWARE</b> and <b>Docker</b>.
+              <br/> The web stack included <b>HTML/CSS</b>, <b>Nodejs</b>, <b>Nginx</b>.
+              <br/> The CI/CD was managed with <b>Jenkins</b> and <b>Sonarqube</b>.
+            </p>
           </div>
           <div className="card-content">
             <div className="card-title">
               <h1>Batoners - Intern</h1>
               <a> 2019.06 - 2019.08 </a>
             </div>
-            <p> Lorem Ipsum. </p>
+            <p>
+              Developing an Android application for visually handicapped people.
+              <br/> I set up the development environment for the team.
+              <br/> The environment included <b>AWS EC2</b>, <b>ML training server</b>, and <b>CI/CD server</b>.
+              <br/> I also took parts in training an ML model, using <b>tensorflow</b>.
+            </p>
           </div>
           </Chrono>
       	</div>

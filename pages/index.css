@@ -205,6 +205,16 @@ a {
   flex-direction: column;
 }
 
+.btn-container {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+}
+
+.card-content .btn-link{
+  width: 150px;
+}
+
 .card-title {
   display: flex;
   flex-direction: row;
