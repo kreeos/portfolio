@@ -153,6 +153,7 @@ export default function Home() {
           </div>
           </Chrono>
       	</div>
+        <hr></hr>
 
 	      <div className="page">
       	  <a className="section-title">
@@ -223,7 +224,7 @@ export default function Home() {
       	  <hr></hr>
         </div>
 
-
+        {/*
       	<div className="page">
       	  <a className="section-title">
       	    Experiences
@@ -289,7 +290,7 @@ export default function Home() {
 	  </div>
 	  <hr></hr>
   </div>
-
+*/}
 </main>
 
       <footer>
