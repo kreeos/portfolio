@@ -1,7 +1,32 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import React from "react"
+import { Chrono } from "react-chrono"
+
 
 export default function Home() {
+  const items = [{
+    // title: "LG CNS",
+    // cardTitle: "Infrastructure Architect",
+    // cardSubtitle: "2021-01 - 2021.04",
+  }, {
+    // title: "SPARCS Biseo",
+    // cardTitle: "Project Manager",
+    // cardSubtitle: "2020.03 - 2020.12",
+  }, {
+	  // title: "Aria",
+	  // cardTitle: "Server Manager",
+	  // cardSubtitle: "2019.12 - 2020.12",
+  }, {
+	  // title: "LG CNS",
+	  // cardTitle: "Intern",
+	  // cardSubtitle: "2020.01 - 2020.02",
+  }, {
+	  // title: "Batoners",
+	  // cardTitle: "Intern",
+	  // cardSubtitle: "2019.06 - 2019.08",
+  },];
+
   return (
     <div className="container">
       <Head>
@@ -16,16 +41,17 @@ export default function Home() {
       </div>
       <main>
         <div className="page">
-
       	  <div className="desc-container">
-            <img className="image-portrait"/>
+            <div>
+              <img className="image-portrait"/>
+            </div>
             <div className="desc-text-container">
               <h1 className="title">
                 <a>Hello, World!</a>
               </h1>
               <p className="description">
                 My name is <b>KangHyun Lee</b>, and you can call me by <b>Kris</b>!<br/>
-                I just graduated from college, and just getting ready to spread my wings.
+                I just graduated from college, and getting ready to spread my wings.
                 <br/>
                 Let me show you couple things about me.
               </p>
@@ -51,9 +77,68 @@ export default function Home() {
       	  </div>
         </div>
 
-        <hr></hr>
+      	<div className="container-chrono">
+      	  <Chrono
+      	    mode="VERTICAL"
+            hideControls={true}
+            theme={{
+              primary: "#4896A0",
+              secondary: "white",
+              cardForeColor: "Black"
+            }}
+      	  >
+          <div className="card-content">
+            <div className="card-title">
+              <h1>LG CNS</h1>
+              <a> 2021.01 - 2021.04 </a>
+            </div>
+            <p> Worked as an Infra Architect. </p>
+          </div>
+          <div className="card-content">
+            <div className="card-title">
+              <h1>PM for SPARCS Biseo</h1>
+              <a> 2020.03 - 2020.12 </a>
+            </div>
+            <p>
+              The system was initially designed for SPARCS meetings.
+  		        <br/> The service stack consists of <b>React.js</b>, <b>Typescript</b>, <b>MongoDB</b> and <b>Node.js</b>.
+  		        <br/>For more information, please visit the project repo.&nbsp;
+              <br/>
+              <a href="https://github.com/sparcs-kaist/biseo-frontend" target="blank" className="btn-link">
+                <img src="/svg-github.svg" alt="Biseo Frontend" className="logo-contact"/>
+                {' '}Frontend
+              </a>
+              <a href="https://github.com/sparcs-kaist/biseo-backend" target="blank" className="btn-link">
+                <img src="/svg-github.svg" alt="Biseo Frontend" className="logo-contact"/>
+                {' '}Backend
+              </a>
+            </p>
+          </div>
+          <div className="card-content">
+            <div className="card-title">
+              <h1>Server Manager</h1>
+              <a> 2019.12 - 2021.02 </a>
+            </div>
+            <p> Lorem Ipsum. </p>
+          </div>
+          <div className="card-content">
+            <div className="card-title">
+              <h1>LG CNS - Intern</h1>
+              <a> 2020.01 - 2020.02 </a>
+            </div>
+            <p> Lorem Ipsum. </p>
+          </div>
+          <div className="card-content">
+            <div className="card-title">
+              <h1>Batoners - Intern</h1>
+              <a> 2019.06 - 2019.08 </a>
+            </div>
+            <p> Lorem Ipsum. </p>
+          </div>
+          </Chrono>
+      	</div>
 
-      	<div className="page">
+	      <div className="page">
       	  <a className="section-title">
       	    Projects
       	  </a>
@@ -141,58 +226,55 @@ export default function Home() {
               <h3>PM for SPARCS Biseo </h3>
               <p>
       		<a className="date"> 2020.03 - 2020.12 </a><br/>
-                  The system was initially designed for SPARCS meetings.
-		  <br/> The service stack consists of <code>React.js</code>,<code>Typescript</code>,<code>MongoDB</code> and <code>Node.js</code>.
-		  <br/>For more information, please visit the project repo.&nbsp;
-      	        <a className="link" href="https://github.com/sparcs-kaist/biseo-frontend">
-                  frontend
-                </a>
-		&nbsp;/&nbsp;
-      	        <a className="link" href="https://github.com/sparcs-kaist/biseo-backend">
-                  backend
-                </a>
-      	      </p>
+            The system was initially designed for SPARCS meetings.
+		        <br/> The service stack consists of <code>React.js</code>,<code>Typescript</code>,<code>MongoDB</code> and <code>Node.js</code>.
+		        <br/>For more information, please visit the project repo.&nbsp;
+      	    <a className="link" href="https://github.com/sparcs-kaist/biseo-frontend">
+              frontend
             </a>
-	    <a className="exp-card">
-	        <h3>Server Manager</h3>
-		<p>
-		    <a className="date"> 2019.12 - 2020.12 </a><br/>
-		    Server Manager for ML enabled server.
-		    <br/> The server was <code>Dockerized</code>, and was managed with a GUI tool called <code>Portainer</code> for ease of use.
-
-		</p>
+		        &nbsp;/&nbsp;
+      	    <a className="link" href="https://github.com/sparcs-kaist/biseo-backend">
+              backend
+            </a>
+      	   </p>
+        </a>
+      <a className="exp-card">
+        <h3>Server Manager</h3>
+        <p>
+	        <a className="date"> 2019.12 - 2020.12 </a><br/>
+	          Server Manager for ML enabled server.
+	          <br/> The server was <code>Dockerized</code>, and was managed with a GUI tool called <code>Portainer</code> for ease of use.
+    		</p>
+      </a>
+      <a className="exp-card">
+        <h3>LG CNS - Intern</h3>
+        <p>
+		      <a className="date"> 2020.01 - 2020.02 </a><br/>
+	        <p>
+            Internship as a Software Architect.
+            <br/> The project was to create a full stack web application on a laptop.
+            <br/> Used technologies were <code>VMWARE</code>, <code>Docker</code>, <code>Nginx</code>, <code>Nodejs</code>,
+            <code>HTML/CSS</code>, <code>Jenkins</code>, and <code>Sonarqube</code>.
+      		</p>
+	      </p>
 	    </a>
-            <a className="exp-card">
-              <h3>LG CNS - Intern</h3>
-              <p>
-      		<a className="date"> 2020.01 - 2020.02 </a><br/>
-      	        <p>
-                  Internship as a Software Architect.
-                  <br/> The project was to create a full stack web application on a laptop.
-		  <br/> Used technologies were <code>VMWARE</code>, <code>Docker</code>, <code>Nginx</code>, <code>Nodejs</code>,
-		<code>HTML/CSS</code>, <code>Jenkins</code>, and <code>Sonarqube</code>.
+      <a className="exp-card">
+        <h3>Batoners - Intern </h3>
+        <p>
+          <a className="date"> 2019.06 - 2019.08 </a><br/>
+          <p>
+            Developing an Android application for visually handicapped people.
+	          <br/> I set up the development environment for the team using AWS
+    	      <br/> The environment included EC2, ML training server, and CI/CD server.
+	          <br/> I also took parts in training an ML model, using <code>tensorflow</code>.
+          </p>
+        </p>
+      </a>
+	  </div>
+	  <hr></hr>
+  </div>
 
-		</p>
-      	      </p>
-      	    </a>
-            <a className="exp-card">
-              <h3>Batoners - Intern </h3>
-              <p>
-                <a className="date"> 2019.06 - 2019.08 </a><br/>
-                <p>
-                  Developing an Android application for visually handicapped people.
-		  <br/> I set up the development environment for the team using AWS
-	    	  <br/> The environment included EC2, ML training server, and CI/CD server.
-		  <br/> I also took parts in training an ML model, using <code>tensorflow</code>.
-                </p>
-              </p>
-            </a>
-      	  </div>
-      	  <hr></hr>
-        </div>
-
-
-      </main>
+</main>
 
       <footer>
         This website was created with {' '}

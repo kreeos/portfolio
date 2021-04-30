@@ -21,16 +21,17 @@ body {
   font-weight: bold;
   color: white;
   /* text-align: center; */
-  padding-left: 20vw;
   font-family: Heebo;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .text {
   /* position: relative; */
   display: flex;
+  width: 1000px;
 }
 
 .text::after {
@@ -78,14 +79,14 @@ body {
 }
 
 hr {
-  width: 90%;
+  width: 80%;
   color: #f1f1f1;
   margin-top: 2em;
   margin-bottom: 4em;
 }
 
 .section-title {
-  font-size: 2.5rem;
+  font-size: 32px;
   font-weight: bold;
 }
 
@@ -98,8 +99,8 @@ hr {
 
 .image-portrait {
   border-radius: 50%;
-  width: 350px;
-  height: 350px;
+  width: 300px;
+  height: 300px;
   background: url("/kris-main-pic.jpeg");
   background-position: center;
   background-repeat: no-repeat;
@@ -155,7 +156,7 @@ a {
   margin: 5%;
   font-family: Heebo;
   line-height: 60px;
-  font-weight: 700;
+  font-weight: bold;
   font-size: 48px;
 }
 
@@ -165,9 +166,10 @@ a {
 }
 
 .description {
+  width: 100%;
   text-align: left;
   line-height: 1.5;
-  font-size: 20px;
+  font-size: 16px;
   margin-right: 5%;
   margin-left: 5%;
   margin-bottom: 5%;
@@ -182,6 +184,7 @@ a {
 
 
 .desc-text-container {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -189,11 +192,42 @@ a {
   justify-content: center;
 }
 
+.container-chrono {
+  width: calc(1000px - 300px);
+  height: 100%;
+}
+
+.card-content {
+  width: 100%;
+  font-family: Heebo;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  display: flex;
+  flex-direction: row;
+}
+
+.card-title h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.card-title a {
+  margin-left: 15px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 code {
   background: #fafafa;
   border-radius: 5px;
   padding: 0.75rem;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
     DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
 }
@@ -204,7 +238,7 @@ code {
   justify-content: center;
   flex-wrap: wrap;
 
-  max-width: 800px;
+  max-width: 1000px;
   margin-top: 3rem;
 }
 
@@ -274,6 +308,7 @@ code {
   padding-left: 10px;
   padding-right: 10px;
   height: 40px;
+  width: 100%;
   background: #FFFFFF;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
   border-radius: 7px;
