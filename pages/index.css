@@ -15,7 +15,7 @@ body {
 
 .topbar {
   min-width: 100vw;
-  height: 7vh;
+  height: 80px;
   background-color: #4880A0;
   font-size: 48px;
   font-weight: bold;
