@@ -93,6 +93,8 @@ hr {
   font-size: 32px;
   font-weight: bold;
   margin-left: 100px;
+  font-family: Heebo;
+  margin-bottom: 3rem;
 }
 
 .page {
@@ -100,6 +102,7 @@ hr {
   display: flex;
   align-items: center;
   flex-direction: column;
+  font-family: Heebo;
 }
 
 .image-portrait {
@@ -220,6 +223,16 @@ a {
   width: 150px;
 }
 
+.card-content p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-size: 0.8rem;
+  line-height: 24px;
+}
+
 .card-title {
   display: flex;
   flex-direction: row;
@@ -236,6 +249,39 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-size: 0.8rem;
+}
+
+.project-card {
+  height: 100%;
+  margin-bottom: 0px;
+}
+
+.project-card-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 1000px;
+  padding-left: 200px;
+}
+
+.project-card hr {
+  color: #e0e0e0;
+  width: 600px;
+  margin-bottom: 5px;
+  border: 1px solid #e0e0e0;
+}
+
+.project-card .btn-link {
+  width: 100px;
+}
+
+.project-image {
+  width: 233px;
+  height: 150px;
+  border-radius: 5px;
+  margin-right: 15px;
 }
 
 code {

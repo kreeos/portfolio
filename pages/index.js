@@ -159,69 +159,152 @@ export default function Home() {
       	  <a className="section-title">
       	    Projects
       	  </a>
-      	  <div className="grid">
-            <a href="https://pioneers.kaist.ac.kr" className="card">
-              <h3>PIONEERS 2071 &rarr;</h3>
-              <p>
-                KAIST 50th year anniversary website
-                <br/>I created this website using <code>React.js</code>,<code>MongoDB</code> and <code>Node.js</code>.
-      	        <br/>
-      	        <a className="link" href="https://github.com/kreeos/pioneers2071">
-                  Link to Repo
-                </a>
-      	      </p>
-            </a>
-            <a href="https://rnl.kaist.ac.kr" className="card">
-              <h3>RNL Website &rarr;</h3>
-              <p>
-                Radiation Materials and Nanomechanics lab website
-                <br/>I created this website using <code>React.js</code>, <code>MongoDB</code> and <code>Node.js</code>.
-        	  	  <br/>
-                <a className="repo">
-                  The project repository is <a className="private">private</a>
-                </a>.
-      	      </p>
-            </a>
-            <a href="https://horoscope.krislee.dev" className="card">
-              <h3>Daily Horoscope &rarr;</h3>
-              <p>
-                A website for your daily horoscope
-                <br/>I created this website using <code>HTML</code>, <code>CSS</code>, <code>MongoDB</code> and <code>Node.js</code>.
-      	        <br/>
-                <a className="link" href="https://github.com/kreeos/newbie_project">
-                  Link to Repo
-                </a>
-      	      </p>
-            </a>
-            <a
-              href="https://github.com/ANLAB-KAIST/KENSv3" className="card"
-            >
-              <h3>KENS &rarr;</h3>
-              <p>
-                  KAIST Educational Network System <br/>
-      		        The system mainly consists of <code>C++</code>, and the main purpose is to build <code>TCP/IP</code>.
-      	  	      <br/>
+          <div className="project-card">
+            <div className="project-card-wrapper">
+              <div>
+                <img className="project-image"src="/pioneers.png"/>
+              </div>
+              <div className="card-content">
+                <div className="card-title">
+                  <h1>PIONEERS 2071</h1>
+                  <a> outsourcing </a>
+                </div>
+                <p>
+                  KAIST 50th year anniversary website
+                  <br/>I created this website using <b>React.js</b>,<b>MongoDB</b> and <b>Node.js</b>.
+        	        <br/>
+                  <div className="btn-container">
+                    <a href="https://pioneers.kaist.ac.kr" target="blank" className="btn-link">
+                      <img src="/svg-web.svg" alt="Pioneers Web" className="logo-contact"/>
+                      {' '}Website
+                    </a>
+                    <a href="https://github.com/kreeos/pioneers2071" target="blank" className="btn-link">
+                      <img src="/svg-github.svg" alt="Pioneers Git" className="logo-contact"/>
+                      {' '}Gtihub
+                    </a>
+                  </div>
+                </p>
+              </div>
+            </div>
+            <hr/>
+          </div>
+          <div className="project-card">
+            <div className="project-card-wrapper">
+              <div>
+                <img className="project-image"src="/rnl.png"/>
+              </div>
+              <div className="card-content">
+                <div className="card-title">
+                  <h1>RNL Website</h1>
+                  <a> outsourcing </a>
+                </div>
+                <p>
+                  Radiation Materials and Nanomechanics lab website
+                  <br/>I created this website using <b>React.js</b>, <b>MongoDB</b> and <b>Node.js</b>.
+          	  	  <br/>
                   <a className="repo">
-                    The project repository is <a className="private">private</a>
+                    The project repository is <b><a className="private">private</a></b>
                   </a>.
-      	      </p>
-      	    </a>
-            <a
-              href="https://www.scs.stanford.edu/17wi-cs140/pintos/pintos.html" className="card"
-            >
-              <h3>PintOS &rarr;</h3>
-              <p>
-                Originally designed for Standford CS140, used for KAIST CS330<br/>
-            		The system consists of 100% <code>C</code> Language. <br/>
-            		Threading, scheduling, syscall, VM, and file system were implemented.
-      	  	    <br/>
-                <a className="repo">
-                  The project repository is <a className="private">private</a>
-                </a>.
-      	      </p>
-            </a>
-      	  </div>
-      	  <hr></hr>
+                  <div className="btn-container">
+                    <a href="https://rnl.kaist.ac.kr" target="blank" className="btn-link">
+                      <img src="/svg-web.svg" alt="RNL Web" className="logo-contact"/>
+                      {' '}Website
+                    </a>
+                  </div>
+                </p>
+              </div>
+            </div>
+            <hr/>
+          </div>
+          <div className="project-card">
+            <div className="project-card-wrapper">
+              <div>
+                <img className="project-image"src="/horoscope.png"/>
+              </div>
+              <div className="card-content">
+                <div className="card-title">
+                  <h1>Daily Horoscope</h1>
+                  <a> Individual Project </a>
+                </div>
+                <p>
+                  A website for your daily horoscope
+                  <br/>I created this website using <b>HTML</b>, <b>CSS</b>, <b>MongoDB</b> and <b>Node.js</b>.
+        	        <br/>
+                  <div className="btn-container">
+                    <a href="https://horoscope.krislee.dev" target="blank" className="btn-link">
+                      <img src="/svg-web.svg" alt="Horoscope Web" className="logo-contact"/>
+                      {' '}Website
+                    </a>
+                    <a href="https://github.com/kreeos/newbie_project" target="blank" className="btn-link">
+                      <img src="/svg-github.svg" alt="Horoscope Git" className="logo-contact"/>
+                      {' '}Gtihub
+                    </a>
+                  </div>
+                </p>
+              </div>
+            </div>
+            <hr/>
+          </div>
+          <div className="project-card">
+            <div className="project-card-wrapper">
+              {/*
+              <div>
+                <img className="project-image"src="/kris-main-pic.jpeg"/>
+              </div>
+              */}
+              <div className="card-content">
+                <div className="card-title">
+                  <h1>KENS</h1>
+                  <a>Coursework Project </a>
+                </div>
+                <p>
+                  KAIST Educational Network System <br/>
+                  The system mainly consists of <b>C++</b>, and the main purpose is to build <b>TCP/IP</b>.
+                  <br/>
+                  <a className="repo">
+                    The project repository is <b><a className="private">private</a></b>
+                  </a>.
+                  {/*
+                  <div className="btn-container">
+                    <a href="https://github.com/ANLAB-KAIST/KENSv3" target="blank" className="btn-link">
+                      <img src="/svg-github.svg" alt="KENS git" className="logo-contact"/>
+                      {' '} KENS
+                    </a>
+                  </div>
+                  */}
+                </p>
+              </div>
+            </div>
+            <hr/>
+          </div>
+          <div className="project-card">
+            <div className="project-card-wrapper">
+              <div className="card-content">
+                <div className="card-title">
+                  <h1>PintOS</h1>
+                  <a>Coursework Project </a>
+                </div>
+                <p>
+                  Originally designed for Standford CS140, used for KAIST CS330<br/>
+              		The system consists of 100% <b>C</b> Language. <br/>
+              		Implementation includes threading, scheduling, syscall, VM, and file system.
+        	  	    <br/>
+                  <a className="repo">
+                    The project repository is <b><a className="private">private</a></b>
+                  </a>.
+                  {/*
+                  <div className="btn-container">
+                    <a href="https://www.scs.stanford.edu/17wi-cs140/pintos/pintos.html" target="blank" className="btn-link">
+                      <img src="/svg-github.svg" alt="PintOS Web" className="logo-contact"/>
+                      {' '}PintOS
+                    </a>
+                  </div>
+                  */}
+                </p>
+              </div>
+            </div>
+            <hr/>
+          </div>
         </div>
 
         {/*
