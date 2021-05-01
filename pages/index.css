@@ -229,7 +229,7 @@ a {
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
-  font-size: 0.8rem;
+  font-size: 1rem;
   line-height: 24px;
 }
 
@@ -249,7 +249,8 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 0.8rem;
+  font-size: 1rem;
+  color: #8695A4;
 }
 
 .project-card {
@@ -268,7 +269,8 @@ a {
 
 .project-card hr {
   color: #e0e0e0;
-  width: 600px;
+  width: 700px;
+  margin-right: 100px;
   margin-bottom: 5px;
   border: 1px solid #e0e0e0;
 }

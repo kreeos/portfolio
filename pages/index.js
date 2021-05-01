@@ -111,7 +111,7 @@ export default function Home() {
                 </a>
                 <a href="https://github.com/sparcs-kaist/biseo-backend" target="blank" className="btn-link">
                   <img src="/svg-github.svg" alt="Biseo Frontend" className="logo-contact"/>
-                  {' '}Gtihub(Backend)
+                  {' '}Github(Backend)
                 </a>
               </div>
             </p>
@@ -167,7 +167,7 @@ export default function Home() {
               <div className="card-content">
                 <div className="card-title">
                   <h1>PIONEERS 2071</h1>
-                  <a> outsourcing </a>
+                  <a> Outsourcing </a>
                 </div>
                 <p>
                   KAIST 50th year anniversary website
@@ -180,7 +180,7 @@ export default function Home() {
                     </a>
                     <a href="https://github.com/kreeos/pioneers2071" target="blank" className="btn-link">
                       <img src="/svg-github.svg" alt="Pioneers Git" className="logo-contact"/>
-                      {' '}Gtihub
+                      {' '}Github
                     </a>
                   </div>
                 </p>
@@ -196,7 +196,7 @@ export default function Home() {
               <div className="card-content">
                 <div className="card-title">
                   <h1>RNL Website</h1>
-                  <a> outsourcing </a>
+                  <a> Outsourcing </a>
                 </div>
                 <p>
                   Radiation Materials and Nanomechanics lab website
@@ -237,7 +237,7 @@ export default function Home() {
                     </a>
                     <a href="https://github.com/kreeos/newbie_project" target="blank" className="btn-link">
                       <img src="/svg-github.svg" alt="Horoscope Git" className="logo-contact"/>
-                      {' '}Gtihub
+                      {' '}Github
                     </a>
                   </div>
                 </p>
