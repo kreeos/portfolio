@@ -80,7 +80,8 @@ export default function Home() {
                   Mail
                 </a>
                 <a href="KangHyun_Kris_Lee_CV_210504.pdf" target="blank" className="btn-link">
-                  <img src="/resume.svg" alt="Resume Logo" className="logo-contact"/>
+                  <div alt="Resume Logo" className="logo-resume">
+                  </div>
                   {' '}Resume
                 </a>
               </div>
