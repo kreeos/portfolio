@@ -75,7 +75,7 @@ export default function Home() {
                   <img src="/svg-mail.svg" alt="Email Logo" className="logo-email"/>
                   {' '}Mail
                 </a>
-                <a href="KangHyun_Kris_Lee_CV_20210411.pdf" target="blank" className="btn-link">
+                <a href="KangHyun_Kris_Lee_CV_210504.pdf" target="blank" className="btn-link">
                   <img src="/resume.svg" alt="Resume Logo" className="logo-contact"/>
                   {' '}Resume
                 </a>
