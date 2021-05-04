@@ -1,10 +1,10 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import React from "react"
 import { Chrono } from "react-chrono"
 
-
 export default function Home() {
+
+
   const items = [{
     // title: "LG CNS",
     // cardTitle: "Infrastructure Architect",
@@ -27,14 +27,15 @@ export default function Home() {
 	  // cardSubtitle: "2019.06 - 2019.08",
   },];
 
+
   return (
     <div className="container">
       <Head>
         <meta name="author" content="Kris Lee"/>
-        <meta name="description" content="This website is a 
+        <meta name="description" content="This website is a
         portfolio website for a developer named Kris Lee."/>
         <meta property="og:image" content="/icon-person.png"/>
-        <meta property="og:description" content="This website is a 
+        <meta property="og:description" content="This website is a
         portfolio website for a developer named Kris Lee."/>
         <meta property="og:title" content="Kris Lee Portfolio"/>
         <title>Kris Lee</title>
@@ -63,17 +64,20 @@ export default function Home() {
                 Let me show you couple things about me.
               </p>
               <div className="links">
-                <a href="https://github.com/kreeos" target="blank" className="btn-link">
-                  <img src="/svg-github.svg" alt="Github Logo" className="logo-contact"/>
+                <a name="github" href="https://github.com/kreeos" target="blank" className="btn-link">
+                  <div alt="Github Logo" className="logo-github">
+                  </div>
                   {' '}Github
                 </a>
-                <a href="http://www.instrgram.com/kreeos47" target="blank" className="btn-link">
-                  <img src="/svg-instagram.svg" alt="Insta Logo" className="logo-contact"/>
+                <a name="insta" href="http://www.instrgram.com/kreeos47" target="blank" className="btn-link">
+                  <div alt="Insta Logo" className="logo-insta">
+                  </div>
                   {' '}Instagram
                 </a>
-                <a href="mailto:kanghyunkrislee@gmail.com" target="blank" className="btn-link">
-                  <img src="/svg-mail.svg" alt="Email Logo" className="logo-email"/>
-                  {' '}Mail
+                <a name="mail" href="mailto:kanghyunkrislee@gmail.com" target="blank" className="btn-link">
+                  <div alt="Mail Logo" className="logo-email">
+                  </div>
+                  Mail
                 </a>
                 <a href="KangHyun_Kris_Lee_CV_210504.pdf" target="blank" className="btn-link">
                   <img src="/resume.svg" alt="Resume Logo" className="logo-contact"/>
@@ -113,11 +117,13 @@ export default function Home() {
               <br/>
               <div className="btn-container">
                 <a href="https://github.com/sparcs-kaist/biseo-frontend" target="blank" className="btn-link">
-                  <img src="/svg-github.svg" alt="Biseo Frontend" className="logo-contact"/>
+                  <div alt="Biseo Frontend" className="logo-github">
+                  </div>
                   {' '}Github(Frontend)
                 </a>
                 <a href="https://github.com/sparcs-kaist/biseo-backend" target="blank" className="btn-link">
-                  <img src="/svg-github.svg" alt="Biseo Frontend" className="logo-contact"/>
+                  <div alt="Biseo Backend" className="logo-github">
+                  </div>
                   {' '}Github(Backend)
                 </a>
               </div>
@@ -182,11 +188,13 @@ export default function Home() {
         	        <br/>
                   <div className="btn-container">
                     <a href="https://pioneers.kaist.ac.kr" target="blank" className="btn-link">
-                      <img src="/svg-web.svg" alt="Pioneers Web" className="logo-contact"/>
+                      <div alt="Pioneers Web" className="logo-web">
+                      </div>
                       {' '}Website
                     </a>
                     <a href="https://github.com/kreeos/pioneers2071" target="blank" className="btn-link">
-                      <img src="/svg-github.svg" alt="Pioneers Git" className="logo-contact"/>
+                      <div alt="Pioneers Git" className="logo-github">
+                      </div>
                       {' '}Github
                     </a>
                   </div>
@@ -214,7 +222,8 @@ export default function Home() {
                   </a>.
                   <div className="btn-container">
                     <a href="https://rnl.kaist.ac.kr" target="blank" className="btn-link">
-                      <img src="/svg-web.svg" alt="RNL Web" className="logo-contact"/>
+                      <div alt="RNL Web" className="logo-web">
+                      </div>
                       {' '}Website
                     </a>
                   </div>
@@ -239,11 +248,13 @@ export default function Home() {
         	        <br/>
                   <div className="btn-container">
                     <a href="https://horoscope.krislee.dev" target="blank" className="btn-link">
-                      <img src="/svg-web.svg" alt="Horoscope Web" className="logo-contact"/>
+                      <div alt="Horoscope Web" className="logo-web">
+                      </div>
                       {' '}Website
                     </a>
                     <a href="https://github.com/kreeos/newbie_project" target="blank" className="btn-link">
-                      <img src="/svg-github.svg" alt="Horoscope Git" className="logo-contact"/>
+                      <div alt="Horoscope Git" className="logo-github">
+                      </div>
                       {' '}Github
                     </a>
                   </div>
@@ -313,75 +324,7 @@ export default function Home() {
             <hr/>
           </div>
         </div>
-
-        {/*
-      	<div className="page">
-      	  <a className="section-title">
-      	    Experiences
-      	  </a>
-      	  <div className="grid">
-            <a className="exp-card">
-              <h3>LG CNS</h3>
-              <p>
-      		      <a className="date"> 2021.01 - Current </a><br/>
-      	        <p>
-                  Working as an Infra Architect
-                </p>
-      	      </p>
-      	    </a>
-            <a className="exp-card">
-              <h3>PM for SPARCS Biseo </h3>
-              <p>
-      		<a className="date"> 2020.03 - 2020.12 </a><br/>
-            The system was initially designed for SPARCS meetings.
-		        <br/> The service stack consists of <code>React.js</code>,<code>Typescript</code>,<code>MongoDB</code> and <code>Node.js</code>.
-		        <br/>For more information, please visit the project repo.&nbsp;
-      	    <a className="link" href="https://github.com/sparcs-kaist/biseo-frontend">
-              frontend
-            </a>
-		        &nbsp;/&nbsp;
-      	    <a className="link" href="https://github.com/sparcs-kaist/biseo-backend">
-              backend
-            </a>
-      	   </p>
-        </a>
-      <a className="exp-card">
-        <h3>Server Manager</h3>
-        <p>
-	        <a className="date"> 2019.12 - 2020.12 </a><br/>
-	          Server Manager for ML enabled server.
-	          <br/> The server was <code>Dockerized</code>, and was managed with a GUI tool called <code>Portainer</code> for ease of use.
-    		</p>
-      </a>
-      <a className="exp-card">
-        <h3>LG CNS - Intern</h3>
-        <p>
-		      <a className="date"> 2020.01 - 2020.02 </a><br/>
-	        <p>
-            Internship as a Software Architect.
-            <br/> The project was to create a full stack web application on a laptop.
-            <br/> Used technologies were <code>VMWARE</code>, <code>Docker</code>, <code>Nginx</code>, <code>Nodejs</code>,
-            <code>HTML/CSS</code>, <code>Jenkins</code>, and <code>Sonarqube</code>.
-      		</p>
-	      </p>
-	    </a>
-      <a className="exp-card">
-        <h3>Batoners - Intern </h3>
-        <p>
-          <a className="date"> 2019.06 - 2019.08 </a><br/>
-          <p>
-            Developing an Android application for visually handicapped people.
-	          <br/> I set up the development environment for the team using AWS
-    	      <br/> The environment included EC2, ML training server, and CI/CD server.
-	          <br/> I also took parts in training an ML model, using <code>tensorflow</code>.
-          </p>
-        </p>
-      </a>
-	  </div>
-	  <hr></hr>
-  </div>
-*/}
-</main>
+      </main>
 
       <footer>
         This website was created with {' '}

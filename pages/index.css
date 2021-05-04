@@ -194,7 +194,7 @@ a {
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
   text-align: left;
   justify-content: center;
 }
@@ -414,18 +414,95 @@ code {
   height: 2em;
 }
 
-.logo-contact {
+.logo-github {
   width: 25px;
   height: 25px;
   padding: 3px;
+  margin-right: 3px;
+  background: url("/github.png") no-repeat;
+  background-position: center;
+}
+
+.logo-insta {
+  width: 25px;
+  height: 25px;
+  padding: 3px;
+  margin-right: 3px;
+  background: url("/instagram.png") no-repeat;
+  background-position: center;
+}
+
+.logo-web {
+  width: 25px;
+  height: 25px;
+  padding: 3px;
+  margin-right: 3px;
+  background: url("/svg-web.svg") no-repeat;
+  background-position: center;
+}
+
+.logo-resume {
+  width: 25px;
+  height: 25px;
+  padding: 3px;
+  margin-right: 3px;
+  background: url("/resume.png") no-repeat;
+  background-position: center;
 }
 
 .logo-email {
   width: 27px;
   height: 23px;
   padding: 3px;
+  margin-right: 3px;
+  background: url("/mail.png") no-repeat;
+  background-position: center;
 }
 
+.btn-link:hover .logo-email {
+  width: 27px;
+  height: 23px;
+  padding: 3px;
+  margin-right: 3px;
+  background: url("/mail-white.png") no-repeat;
+  background-position: center;
+}
+
+.btn-link:hover .logo-insta {
+  width: 27px;
+  height: 23px;
+  padding: 3px;
+  margin-right: 3px;
+  background: url("/insta-white.png") no-repeat;
+  background-position: center;
+}
+
+.btn-link:hover .logo-github {
+  width: 27px;
+  height: 23px;
+  padding: 3px;
+  margin-right: 3px;
+  background: url("/github-white.png") no-repeat;
+  background-position: center;
+}
+
+.btn-link:hover .logo-resume {
+  width: 27px;
+  height: 23px;
+  padding: 3px;
+  margin-right: 3px;
+  background: url("/resume-white.png") no-repeat;
+  background-position: center;
+}
+
+.btn-link:hover .logo-web {
+  width: 27px;
+  height: 23px;
+  padding: 3px;
+  margin-right: 3px;
+  background: url("/web-white.png") no-repeat;
+  background-position: center;
+}
 @media (max-width: 600px) {
   .grid {
     width: 100%;
