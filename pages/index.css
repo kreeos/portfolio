@@ -38,7 +38,6 @@ body {
 .text::after {
   content: "";
   margin-left: 15px;
-  margin-top: 7px;
   /* Remove display: inline-block if not required to be on the same line as text etc */
   display: flex;
   background-color: white;
