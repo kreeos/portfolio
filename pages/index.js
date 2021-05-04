@@ -30,6 +30,13 @@ export default function Home() {
   return (
     <div className="container">
       <Head>
+        <meta name="author" content="Kris Lee"/>
+        <meta name="description" content="This website is a 
+        portfolio website for a developer named Kris Lee."/>
+        <meta property="og:image" content="/icon-person.png"/>
+        <meta property="og:description" content="This website is a 
+        portfolio website for a developer named Kris Lee."/>
+        <meta property="og:title" content="Kris Lee Portfolio"/>
         <title>Kris Lee</title>
         <link rel="icon" href="/icon-person.png" />
       </Head>
