@@ -460,7 +460,7 @@ code {
 }
 
 .btn-link:hover .logo-email {
-  width: 27px;
+  /* width: 27px; */
   height: 23px;
   padding: 3px;
   margin-right: 3px;
@@ -469,7 +469,7 @@ code {
 }
 
 .btn-link:hover .logo-insta {
-  width: 27px;
+  /* width: 27px; */
   height: 23px;
   padding: 3px;
   margin-right: 3px;
@@ -478,7 +478,7 @@ code {
 }
 
 .btn-link:hover .logo-github {
-  width: 27px;
+  /* width: 27px; */
   height: 23px;
   padding: 3px;
   margin-right: 3px;
@@ -487,7 +487,7 @@ code {
 }
 
 .btn-link:hover .logo-resume {
-  width: 27px;
+  /* width: 27px; */
   height: 23px;
   padding: 3px;
   margin-right: 3px;
