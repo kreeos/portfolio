@@ -26,7 +26,13 @@ export default function Home() {
 	  // cardTitle: "Intern",
 	  // cardSubtitle: "2019.06 - 2019.08",
   },];
-
+  const toTop = () => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    });
+  }
 
   return (
     <div className="container">
@@ -324,6 +330,11 @@ export default function Home() {
             </div>
             <hr/>
           </div>
+        </div>
+        <div className="top-btn-container">
+          <button onClick={toTop} className="top-btn">
+            <img src="/top.png"/>
+          </button>
         </div>
       </main>
 
