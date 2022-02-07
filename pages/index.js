@@ -107,6 +107,20 @@ export default function Home() {
       	  >
           <div className="card-content">
             <div className="card-title">
+              <h1>Naver Financial</h1>
+              <a> 2021.11 - 2021.12 </a>
+            </div>
+            <p>
+              Internship as a Backend Developer
+              <br/> The service stack consists of <b>React.js</b>, <b>Kotlin</b>, <b>Spring Boot</b> and <b>MySQL</b>.
+              <br/> I designed and implemented APIs for:
+              <br/> - CRUD, download as JSON & properties, search, and pagination.
+              <br/> Implemented CI/CD with Jenkins and Git Hook.
+              <br/> Developed admin system frontend pages with connected APIs.
+            </p>
+          </div>
+          <div className="card-content">
+            <div className="card-title">
               <h1>LG CNS</h1>
               <a> 2021.01 - 2021.04 </a>
             </div>
